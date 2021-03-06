@@ -1,9 +1,11 @@
 package com.app.kotlinbasics
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.app.kotlinbasics.basics.KotlinBasics
 import com.app.kotlinbasics.classexample.SampleClass
+import com.app.kotlinbasics.constructorexample.ConstExample
+import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,16 +24,23 @@ class MainActivity : AppCompatActivity() {
         SampleClass().InnerClass().printInnerMethod()
 
         //Call anonymous inner class
-        val callMethod: SampleInterface = object:SampleInterface{ //Create object of interface
+        val callMethod: SampleInterface = object : SampleInterface { //Create object of interface
             override fun testMethod() {
                 println("Example of anonymous inner class")
             }
         }
         callMethod.testMethod()
 
+        //Primary Constructor Example
+        ConstExample("Human", 25).test()
+
+        //Secondary constructor example, when you want to add more logic to primary constructor
+        val secondaryConstructorExample = SecondaryConstructorExample("abc", 30)
+        println("${secondaryConstructorExample.age} ${secondaryConstructorExample.firstName} ${secondaryConstructorExample.message}")
+
     }
 
-    interface SampleInterface{
+    interface SampleInterface {
         fun testMethod()
     }
 }
