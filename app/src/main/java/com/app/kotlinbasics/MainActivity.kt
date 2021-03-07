@@ -6,6 +6,7 @@ import com.app.kotlinbasics.basics.KotlinBasics
 import com.app.kotlinbasics.classexample.SampleClass
 import com.app.kotlinbasics.constructorexample.ConstExample
 import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
+import com.app.kotlinbasics.inheritanceexample.ChildClass
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         //Secondary constructor example, when you want to add more logic to primary constructor
         val secondaryConstructorExample = SecondaryConstructorExample("abc", 30)
         println("${secondaryConstructorExample.age} ${secondaryConstructorExample.firstName} ${secondaryConstructorExample.message}")
+
+        //Inheritance example
+        ChildClass().mainMethod()
 
     }
 
