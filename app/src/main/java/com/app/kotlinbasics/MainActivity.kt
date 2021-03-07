@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         //Call Inner class method
         SampleClass().InnerClass().printInnerMethod()
 
-        //Call anonymous inner class
+        //Call anonymous inner class or Interface example
         val callMethod: SampleInterface = object : SampleInterface { //Create object of interface
             override fun testMethod() {
                 println("Example of anonymous inner class")
