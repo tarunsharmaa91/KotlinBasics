@@ -21,3 +21,5 @@ v
 Fapp/src/main/java/com/app/kotlinbasics/inheritanceexample/BaseClass.kt,e/0/e04fa09b6c8ba3db97dc386fee50b22a0fff8bf6
 w
 Gapp/src/main/java/com/app/kotlinbasics/inheritanceexample/ChildClass.kt,7/4/7445ef82eac0b17783312c9fa2ced10af2e29ef4
+z
+Japp/src/main/java/com/app/kotlinbasics/kotlinextensions/KotlinExtension.kt,0/0/008e9ef8dfd935387a9f9c0d103d1356a328a357

@@ -8,6 +8,7 @@ import com.app.kotlinbasics.constructorexample.ConstExample
 import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
 import com.app.kotlinbasics.inheritanceexample.ChildClass
 import com.app.kotlinbasics.kotlinextensions.KotlinExtension
+import com.app.kotlinbasics.kotlinextensions.ObjectExtension
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,16 +44,19 @@ class MainActivity : AppCompatActivity() {
         //Inheritance example
         ChildClass().mainMethod()
 
-        //Kotlin extension example (Add or remove some method without inheriting or modifying them)
+        //Kotlin function extension example (Add or remove some method without inheriting or modifying them)
         val b = KotlinExtension()
         b.a = "Java"
 
         val c = KotlinExtension()
-        c.a= "Kotlin"
+        c.a = "Kotlin"
 
         val d = KotlinExtension()
         d.a = b.addSkills(c)
         d.printSkill()
+
+        //Object extension is to implement static method in kotlin
+        ObjectExtension.printValue()
     }
 
     interface SampleInterface {
