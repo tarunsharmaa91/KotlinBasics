@@ -7,6 +7,7 @@ import com.app.kotlinbasics.classexample.SampleClass
 import com.app.kotlinbasics.constructorexample.ConstExample
 import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
 import com.app.kotlinbasics.inheritanceexample.ChildClass
+import com.app.kotlinbasics.kotlinextensions.KotlinExtension
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +43,16 @@ class MainActivity : AppCompatActivity() {
         //Inheritance example
         ChildClass().mainMethod()
 
+        //Kotlin extension example (Add or remove some method without inheriting or modifying them)
+        val b = KotlinExtension()
+        b.a = "Java"
+
+        val c = KotlinExtension()
+        c.a= "Kotlin"
+
+        val d = KotlinExtension()
+        d.a = b.addSkills(c)
+        d.printSkill()
     }
 
     interface SampleInterface {
