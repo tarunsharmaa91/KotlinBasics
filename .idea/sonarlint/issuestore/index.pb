@@ -17,3 +17,7 @@ y
 Iapp/src/main/java/com/app/kotlinbasics/constructorexample/ConstExample.kt,2/4/24626adcc0240470d1a612c3f50fcb96e4a13d85
 ˆ
 Xapp/src/main/java/com/app/kotlinbasics/constructorexample/SecondaryConstructorExample.kt,a/6/a644888e1249b78c3348be7b70863e3d33acead5
+v
+Fapp/src/main/java/com/app/kotlinbasics/inheritanceexample/BaseClass.kt,e/0/e04fa09b6c8ba3db97dc386fee50b22a0fff8bf6
+w
+Gapp/src/main/java/com/app/kotlinbasics/inheritanceexample/ChildClass.kt,7/4/7445ef82eac0b17783312c9fa2ced10af2e29ef4
