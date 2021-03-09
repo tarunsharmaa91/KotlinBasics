@@ -6,9 +6,11 @@ import com.app.kotlinbasics.basics.KotlinBasics
 import com.app.kotlinbasics.classexample.SampleClass
 import com.app.kotlinbasics.constructorexample.ConstExample
 import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
+import com.app.kotlinbasics.dataclass.DataClassExample
 import com.app.kotlinbasics.inheritanceexample.ChildClass
 import com.app.kotlinbasics.kotlinextensions.KotlinExtension
 import com.app.kotlinbasics.kotlinextensions.ObjectExtension
+import com.app.kotlinbasics.sealedclassexample.SealedClass
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,6 +59,18 @@ class MainActivity : AppCompatActivity() {
 
         //Object extension is to implement static method in kotlin
         ObjectExtension.printValue()
+
+        //Data class example
+        val value = DataClassExample("This is data class")
+        println("$value.name")
+
+        //Sealed class example
+        val sealedClass: SealedClass = SealedClass.one()
+        val output = when(sealedClass){
+            is SealedClass.one -> "First sealed class"
+            is SealedClass.two -> "Second sealed class"
+        }
+        println(output)
     }
 
     interface SampleInterface {
