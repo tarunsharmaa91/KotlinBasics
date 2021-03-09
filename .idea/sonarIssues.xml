@@ -38,6 +38,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/app/kotlinbasics/dataclass/DataClassExample.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/app/kotlinbasics/inheritanceexample/BaseClass.kt">
           <value>
             <set />
@@ -59,6 +64,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/app/kotlinbasics/kotlinextensions/ObjectExtension.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/app/kotlinbasics/sealedclassexample/SealedClass.kt">
           <value>
             <set />
           </value>
