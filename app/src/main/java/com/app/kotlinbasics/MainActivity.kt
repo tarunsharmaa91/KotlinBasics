@@ -7,6 +7,7 @@ import com.app.kotlinbasics.classexample.SampleClass
 import com.app.kotlinbasics.constructorexample.ConstExample
 import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
 import com.app.kotlinbasics.dataclass.DataClassExample
+import com.app.kotlinbasics.generics.GenericExample
 import com.app.kotlinbasics.inheritanceexample.ChildClass
 import com.app.kotlinbasics.kotlinextensions.KotlinExtension
 import com.app.kotlinbasics.kotlinextensions.ObjectExtension
@@ -71,6 +72,11 @@ class MainActivity : AppCompatActivity() {
             is SealedClass.two -> "Second sealed class"
         }
         println(output)
+
+        //Generic Example
+        var abc = GenericExample("abc")
+        var def = GenericExample(12)
+        var defa = GenericExample(12.00)
     }
 
     interface SampleInterface {
