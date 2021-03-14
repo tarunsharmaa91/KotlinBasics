@@ -7,6 +7,8 @@ import com.app.kotlinbasics.classexample.SampleClass
 import com.app.kotlinbasics.constructorexample.ConstExample
 import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
 import com.app.kotlinbasics.dataclass.DataClassExample
+import com.app.kotlinbasics.delegation.Downloader
+import com.app.kotlinbasics.delegation.Player
 import com.app.kotlinbasics.generics.GenericExample
 import com.app.kotlinbasics.inheritanceexample.ChildClass
 import com.app.kotlinbasics.kotlinextensions.KotlinExtension
@@ -67,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
         //Sealed class example
         val sealedClass: SealedClass = SealedClass.one()
-        val output = when(sealedClass){
+        val output = when (sealedClass) {
             is SealedClass.one -> "First sealed class"
             is SealedClass.two -> "Second sealed class"
         }
@@ -77,6 +79,49 @@ class MainActivity : AppCompatActivity() {
         var abc = GenericExample("abc")
         var def = GenericExample(12)
         var defa = GenericExample(12.00)
+
+        //Delegation in Kotlin Example
+
+        val file = "Song"
+        val media = MediaFile(FileDownloader(file), FilePlayer(file))
+        media.download()
+        media.play()
+
+    }
+
+    class FileDownloader(private val file: String) : Downloader {
+        override fun download() {
+            println("$file Downloaded")
+        }
+    }
+
+    class FilePlayer(private val file: String) : Player {
+        override fun play() {
+            println("$file Play")
+        }
+
+    }
+
+    //Delegation means delegating the responsibility to another object and we are implementing downloader and player interface here
+    /*class MediaFile(private val downloader: Downloader, private val player: Player) : Downloader,
+        Player {
+
+        //We will be delegating the responsibility of download and play to downloader and player instance defined above
+
+        override fun download() {
+            downloader.download()
+        }
+
+        override fun play() {
+            player.play()
+        }
+
+    }*/
+
+    //Above overridden code is removed using delegation
+    class MediaFile(private val downloader: Downloader, private val player: Player) :
+        Downloader by downloader,
+        Player by player {
     }
 
     interface SampleInterface {
