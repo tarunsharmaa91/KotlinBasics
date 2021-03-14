@@ -29,5 +29,5 @@ t
 Dapp/src/main/java/com/app/kotlinbasics/dataclass/DataClassExample.kt,9/d/9d5ca30da8aed1162b7239c4bc9071faeb0351ce
 x
 Happ/src/main/java/com/app/kotlinbasics/sealedclassexample/SealedClass.kt,5/2/52602b64993ee0e57d11027c7c5b0252337f5619
-t
-Dapp/src/main/java/com/app/kotlinbasics/generics/GenericsExample.java,1/e/1ed9ff22b6c87b17de59c39f5bb47acb90962070
+q
+Aapp/src/main/java/com/app/kotlinbasics/generics/GenericExample.kt,2/6/26cd521fe9e02939bc57edd5d93e1786b7c3cb89
