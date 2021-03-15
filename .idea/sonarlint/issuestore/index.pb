@@ -31,3 +31,7 @@ x
 Happ/src/main/java/com/app/kotlinbasics/sealedclassexample/SealedClass.kt,5/2/52602b64993ee0e57d11027c7c5b0252337f5619
 q
 Aapp/src/main/java/com/app/kotlinbasics/generics/GenericExample.kt,2/6/26cd521fe9e02939bc57edd5d93e1786b7c3cb89
+o
+?app/src/main/java/com/app/kotlinbasics/delegation/Downloader.kt,4/6/46fbe35fc69f25bbdd43a5fd528ba2d676d45344
+k
+;app/src/main/java/com/app/kotlinbasics/delegation/Player.kt,b/b/bb0c5f1fd4897241cca743bce3d833bf3e82c064
