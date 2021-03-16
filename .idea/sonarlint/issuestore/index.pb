@@ -35,3 +35,5 @@ o
 ?app/src/main/java/com/app/kotlinbasics/delegation/Downloader.kt,4/6/46fbe35fc69f25bbdd43a5fd528ba2d676d45344
 k
 ;app/src/main/java/com/app/kotlinbasics/delegation/Player.kt,b/b/bb0c5f1fd4897241cca743bce3d833bf3e82c064
+z
+Japp/src/main/java/com/app/kotlinbasics/destructuringdeclaration/Student.kt,e/0/e0d65598813067e61594daa30e72e865cbe2b356

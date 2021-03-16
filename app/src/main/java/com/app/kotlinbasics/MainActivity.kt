@@ -9,6 +9,7 @@ import com.app.kotlinbasics.constructorexample.SecondaryConstructorExample
 import com.app.kotlinbasics.dataclass.DataClassExample
 import com.app.kotlinbasics.delegation.Downloader
 import com.app.kotlinbasics.delegation.Player
+import com.app.kotlinbasics.destructuringdeclaration.Student
 import com.app.kotlinbasics.generics.GenericExample
 import com.app.kotlinbasics.inheritanceexample.ChildClass
 import com.app.kotlinbasics.kotlinextensions.KotlinExtension
@@ -87,6 +88,11 @@ class MainActivity : AppCompatActivity() {
         media.download()
         media.play()
 
+        //Destructuring declaration: Declaring multiple variables at once
+        val obj = Student("abc", "def")
+        val(name, subject) = obj
+        //Here name and subject are objects of student class
+        println("$name $subject")
     }
 
     class FileDownloader(private val file: String) : Downloader {
