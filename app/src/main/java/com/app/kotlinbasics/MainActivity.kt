@@ -91,6 +91,7 @@ class MainActivity : AppCompatActivity() {
         //Destructuring declaration: Declaring multiple variables at once
         val obj = Student("abc", "def")
         val(name, subject) = obj
+        //Here name and subject are objects of student class
         println("$name $subject")
     }
 
