@@ -35,7 +35,10 @@ class MainActivity : AppCompatActivity() {
         //Call anonymous inner class or Interface example
         val callMethod: SampleInterface = object : SampleInterface { //Create object of interface
             override fun testMethod() {
-                println("Example of anonymous inner class")
+                //Below is an example of String interpolation
+                println(""""Example of 
+                    |anonymous inner 
+                    |class""".trimMargin())
             }
         }
         callMethod.testMethod()
@@ -84,6 +87,7 @@ class MainActivity : AppCompatActivity() {
         //Delegation in Kotlin Example
 
         val file = "Song"
+        // val is used to make variable read Only
         val media = MediaFile(FileDownloader(file), FilePlayer(file))
         media.download()
         media.play()
