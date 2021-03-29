@@ -97,6 +97,10 @@ class MainActivity : AppCompatActivity() {
         val(name, subject) = obj
         //Here name and subject are objects of student class
         println("$name $subject")
+
+
+        var a:String? = null
+        println(a)
     }
 
     class FileDownloader(private val file: String) : Downloader {
